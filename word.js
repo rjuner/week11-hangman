@@ -26,12 +26,24 @@ var Word = function(wrd){
 		for(var i = 0; i < testWord.length; i++){
 			//console.log(testWord[i]);
 			if(testWord[i] == lets[i]){
-				console.log("SAME LETTER!"); 
+				count++;
+				//console.log("SAME LETTER!"); 
 			}else{
+
 				console.log("NOT THE SAME!");
 			}
 		}
+		if(count == wrd.length){
+			//@@@@return FOUND PROPERTY/TRUE
+			console.log("It's a MATCH!");
+
+		}else{
+			//@@@@return FALSE
+			console.log("testWord and wrd don't match...");
+		}
 	}
+
+	//PUT CHECK IF LETTER FOUND HERE
 }
 
 var test = new Word('donut'); 
